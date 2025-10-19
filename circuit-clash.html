@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <meta name="description"
+    content="Circuit Clash 1.0 - National Robotics Competition organized by BUP Robotics Club. 160K BDT Prize Pool. 6 segments including Robo Soccer, LFR, CTF, and more.">
+  <meta property="og:title" content="Circuit Clash 1.0 | BUP Robotics Club">
+  <meta property="og:image" content="image/Event_logo.png">
+  <meta property="og:description" content="Join the biggest robotics festival of 2025! 160K BDT Prize Pool">
+
+  <title>Circuit Clash 1.0 | BUP Robotics Club</title>
+
+  <link rel="shortcut icon" href="image/favicon.png" type="image/png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/circuit-clash.css">
+</head>
+
+<body style="overflow-x: hidden; max-width: 100vw;">
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="image/RC_logo.png" alt="BUPRC Logo" class="logo-icon">
+        <span class="logo-text">BUPRC</span>
+      </a>
+
+      <div class="menu-btn">
+        <div class="menu-btn__burger"></div>
+      </div>
+
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="#about-event" class="nav-link">About Event</a></li>
+          <li><a href="#segments" class="nav-link">Segments</a></li>
+          <li><a href="#schedule" class="nav-link">Schedule</a></li>
+          <li><a href="#register" class="nav-link active">Register</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Event Hero Section -->
+    <section class="event-hero">
+      <div class="event-hero-content">
+        <div class="event-badge">National Competition</div>
+        <h1 class="event-title glitch-text" data-text="CIRCUIT CLASH 1.0">CIRCUIT CLASH 1.0</h1>
+        <p class="event-tagline">Where Innovation Meets Competition</p>
+        
+        <div class="event-key-info">
+          <div class="info-item">
+            <i class='bx bx-calendar'></i>
+            <span>November 15, 2025</span>
+          </div>
+          <div class="info-item">
+            <i class='bx bx-map'></i>
+            <span>Bangladesh University of Professionals</span>
+          </div>
+          <div class="info-item">
+            <i class='bx bx-trophy'></i>
+            <span>160K BDT Prize Pool</span>
+          </div>
+        </div>
+
+        <div class="cta-buttons">
+          <a href="#register" class="btn btn-primary btn-large">Register Now</a>
+          <a href="#segments" class="btn btn-outline">View Segments</a>
+        </div>
+
+        <div class="countdown-timer" id="countdown">
+          <div class="countdown-item">
+            <span class="countdown-value" id="days">00</span>
+            <span class="countdown-label">Days</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-value" id="hours">00</span>
+            <span class="countdown-label">Hours</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-value" id="minutes">00</span>
+            <span class="countdown-label">Minutes</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-value" id="seconds">00</span>
+            <span class="countdown-label">Seconds</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-hero-image">
+        <img src="image/Event_logo.png" alt="Circuit Clash 1.0 Logo" class="floating-logo">
+      </div>
+    </section>
+
+    <!-- About Event Section -->
+    <section class="about-event section-padding" id="about-event">
+      <div class="section-header">
+        <h2 class="section-title">About <span class="highlight">Circuit Clash 1.0</span></h2>
+        <div class="title-bar"></div>
+      </div>
+
+      <div class="about-event-content">
+        <p class="event-description">
+          Circuit Clash 1.0 is the flagship national robotics and technology festival organized by BUP Robotics Club. 
+          This groundbreaking event brings together the brightest minds from universities across Bangladesh to compete, 
+          innovate, and showcase their technological prowess across six thrilling segments.
+        </p>
+
+        <div class="event-highlights">
+          <div class="highlight-card">
+            <i class='bx bx-trending-up'></i>
+            <h3>6 Competition Segments</h3>
+            <p>Multiple categories to showcase your skills</p>
+          </div>
+          <div class="highlight-card">
+            <i class='bx bx-money'></i>
+            <h3>160K BDT Prize Pool</h3>
+            <p>Lucrative rewards for winners</p>
+          </div>
+          <div class="highlight-card">
+            <i class='bx bx-group'></i>
+            <h3>500+ Participants Expected</h3>
+            <p>From top universities nationwide</p>
+          </div>
+          <div class="highlight-card">
+            <i class='bx bx-briefcase'></i>
+            <h3>Industry Mentors</h3>
+            <p>Learn from leading tech professionals</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Segments Section -->
+    <section class="segments section-padding" id="segments">
+      <div class="section-header">
+        <h2 class="section-title">Competition <span class="highlight">Segments</span></h2>
+        <div class="title-bar"></div>
+      </div>
+
+      <div class="segments-grid">
+        <!-- Robo Soccer -->
+        <div class="segment-card">
+          <div class="segment-icon">
+            <i class='bx bx-football'></i>
+          </div>
+          <h3 class="segment-title">Robo Soccer</h3>
+          <p class="segment-description">
+            Build autonomous robots to compete in fast-paced soccer matches. Test your robot's agility, strategy, and precision.
+          </p>
+          <div class="segment-details">
+            <div class="detail-item">
+              <i class='bx bx-group'></i>
+              <span>Team Size: 3-5 members</span>
+            </div>
+            <div class="detail-item">
+              <i class='bx bx-trophy'></i>
+              <span>Prize: 40K BDT</span>
+            </div>
+          </div>
+          <div class="segment-actions">
+            <a href="#" class="btn btn-small">View Rulebook</a>
+            <a href="#register" class="btn btn-small btn-primary">Register</a>
+          </div>
+        </div>
+
+        <!-- LFR -->
+        <div class="segment-card">
+          <div class="segment-icon">
+            <i class='bx bx-shape-circle'></i>
+          </div>
+          <h3 class="segment-title">Line Following Robot (LFR)</h3>
+          <p class="segment-description">
+            Design robots that can autonomously navigate complex tracks. Speed, accuracy, and algorithm efficiency matter.
+          </p>
+          <div class="segment-details">
+            <div class="detail-item">
+              <i class='bx bx-group'></i>
+              <span>Team Size: 2-4 members</span>
+            </div>
+            <div class="detail-item">
+              <i class='bx bx-trophy'></i>
+              <span>Prize: 30K BDT</span>
+            </div>
+          </div>
+          <div class="segment-actions">
+            <a href="#" class="btn btn-small">View Rulebook</a>
+            <a href="#register" class="btn btn-small btn-primary">Register</a>
+          </div>
+        </div>
+
+        <!-- CTF -->
+        <div class="segment-card">
+          <div class="segment-icon">
+            <i class='bx bx-shield-alt-2'></i>
+          </div>
+          <h3 class="segment-title">Capture The Flag (CTF)</h3>
+          <p class="segment-description">
+            Put your cybersecurity skills to the test. Solve challenges in cryptography, web exploitation, and reverse engineering.
+          </p>
+          <div class="segment-details">
+            <div class="detail-item">
+              <i class='bx bx-group'></i>
+              <span>Team Size: 1-3 members</span>
+            </div>
+            <div class="detail-item">
+              <i class='bx bx-trophy'></i>
+              <span>Prize: 25K BDT</span>
+            </div>
+          </div>
+          <div class="segment-actions">
+            <a href="#" class="btn btn-small">View Rulebook</a>
+            <a href="#register" class="btn btn-small btn-primary">Register</a>
+          </div>
+        </div>
+
+        <!-- Project Showcasing -->
+        <div class="segment-card">
+          <div class="segment-icon">
+            <i class='bx bx-bulb'></i>
+          </div>
+          <h3 class="segment-title">Project Showcasing</h3>
+          <p class="segment-description">
+            Present your innovative projects to industry experts and judges. Innovation, feasibility, and presentation skills count.
+          </p>
+          <div class="segment-details">
+            <div class="detail-item">
+              <i class='bx bx-group'></i>
+              <span>Team Size: 2-5 members</span>
+            </div>
+            <div class="detail-item">
+              <i class='bx bx-trophy'></i>
+              <span>Prize: 35K BDT</span>
+            </div>
+          </div>
+          <div class="segment-actions">
+            <a href="#" class="btn btn-small">View Rulebook</a>
+            <a href="#register" class="btn btn-small btn-primary">Register</a>
+          </div>
+        </div>
+
+        <!-- Valorant Tournament -->
+        <div class="segment-card">
+          <div class="segment-icon">
+            <i class='bx bx-joystick'></i>
+          </div>
+          <h3 class="segment-title">Valorant Tournament</h3>
+          <p class="segment-description">
+            Compete in the tactical FPS showdown. Strategy, teamwork, and individual skill will determine the champions.
+          </p>
+          <div class="segment-details">
+            <div class="detail-item">
+              <i class='bx bx-group'></i>
+              <span>Team Size: 5 members</span>
+            </div>
+            <div class="detail-item">
+              <i class='bx bx-trophy'></i>
+              <span>Prize: 20K BDT</span>
+            </div>
+          </div>
+          <div class="segment-actions">
+            <a href="#" class="btn btn-small">View Rulebook</a>
+            <a href="#register" class="btn btn-small btn-primary">Register</a>
+          </div>
+        </div>
+
+        <!-- FC Tournament -->
+        <div class="segment-card">
+          <div class="segment-icon">
+            <i class='bx bx-game'></i>
+          </div>
+          <h3 class="segment-title">FC Tournament</h3>
+          <p class="segment-description">
+            Show your FIFA/FC skills in head-to-head matches. Experience, strategy, and gaming prowess on the virtual pitch.
+          </p>
+          <div class="segment-details">
+            <div class="detail-item">
+              <i class='bx bx-group'></i>
+              <span>Individual</span>
+            </div>
+            <div class="detail-item">
+              <i class='bx bx-trophy'></i>
+              <span>Prize: 10K BDT</span>
+            </div>
+          </div>
+          <div class="segment-actions">
+            <a href="#" class="btn btn-small">View Rulebook</a>
+            <a href="#register" class="btn btn-small btn-primary">Register</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule section-padding" id="schedule">
+      <div class="section-header">
+        <h2 class="section-title">Event <span class="highlight">Schedule</span></h2>
+        <div class="title-bar"></div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Registration Opens</h3>
+            <p class="timeline-date">October 20, 2025</p>
+            <p>Early bird registration with discounted fees</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Registration Closes</h3>
+            <p class="timeline-date">November 10, 2025</p>
+            <p>Final deadline for team submissions</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker active"></div>
+          <div class="timeline-content">
+            <h3>Opening Ceremony</h3>
+            <p class="timeline-date">November 15, 2025 - 9:00 AM</p>
+            <p>Welcome speech, event overview, and segment briefings</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Competition Day 1</h3>
+            <p class="timeline-date">November 15, 2025 - 10:00 AM - 6:00 PM</p>
+            <p>Robo Soccer, LFR, and CTF preliminary rounds</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Competition Day 2</h3>
+            <p class="timeline-date">November 16, 2025 - 10:00 AM - 6:00 PM</p>
+            <p>Project Showcasing, Gaming Tournaments, and Finals</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Prize Distribution & Closing</h3>
+            <p class="timeline-date">November 16, 2025 - 7:00 PM</p>
+            <p>Award ceremony and networking session</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section class="registration section-padding" id="register">
+      <div class="section-header">
+        <h2 class="section-title">Register <span class="highlight">Your Team</span></h2>
+        <div class="title-bar"></div>
+      </div>
+
+      <div class="registration-content">
+        <div class="registration-info">
+          <h3>Registration Details</h3>
+          <ul class="info-list">
+            <li><i class='bx bx-check-circle'></i> Early Bird: 500 BDT per team (Until Oct 31)</li>
+            <li><i class='bx bx-check-circle'></i> Regular: 800 BDT per team (Nov 1-10)</li>
+            <li><i class='bx bx-check-circle'></i> Teams can register for multiple segments</li>
+            <li><i class='bx bx-check-circle'></i> University ID required for verification</li>
+            <li><i class='bx bx-check-circle'></i> Certificates for all participants</li>
+            <li><i class='bx bx-check-circle'></i> Refreshments provided during event</li>
+          </ul>
+
+          <div class="payment-info">
+            <h4>Payment Methods</h4>
+            <p><strong>bKash/Nagad:</strong> 01XXXXXXXXX</p>
+            <p><strong>Bank Transfer:</strong> Account details will be emailed</p>
+            <p class="note">* Send payment screenshot with registration form</p>
+          </div>
+        </div>
+
+        <div class="registration-form-container">
+          <h3>Quick Registration</h3>
+          <p class="form-description">Choose your segment and complete the registration</p>
+          
+          <div class="segment-selection">
+            <button class="segment-btn" data-segment="robo-soccer">Robo Soccer</button>
+            <button class="segment-btn" data-segment="lfr">LFR</button>
+            <button class="segment-btn" data-segment="ctf">CTF</button>
+            <button class="segment-btn" data-segment="project">Project Showcasing</button>
+            <button class="segment-btn" data-segment="valorant">Valorant</button>
+            <button class="segment-btn" data-segment="fc">FC Tournament</button>
+          </div>
+
+          <a href="#" class="btn btn-primary btn-large">Proceed to Registration Form</a>
+          
+          <div class="registration-links">
+            <a href="#" class="link-item">
+              <i class='bx bx-file-blank'></i>
+              <span>Download All Rulebooks</span>
+            </a>
+            <a href="#" class="link-item">
+              <i class='bx bx-list-ul'></i>
+              <span>View Registered Teams</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registered Teams Section -->
+    <section class="registered-teams section-padding">
+      <div class="section-header">
+        <h2 class="section-title">Registered <span class="highlight">Teams</span></h2>
+        <div class="title-bar"></div>
+      </div>
+
+      <div class="teams-filter">
+        <button class="filter-btn active" data-filter="all">All Segments</button>
+        <button class="filter-btn" data-filter="robo-soccer">Robo Soccer</button>
+        <button class="filter-btn" data-filter="lfr">LFR</button>
+        <button class="filter-btn" data-filter="ctf">CTF</button>
+        <button class="filter-btn" data-filter="project">Project</button>
+        <button class="filter-btn" data-filter="valorant">Valorant</button>
+        <button class="filter-btn" data-filter="fc">FC</button>
+      </div>
+
+      <div class="teams-stats">
+        <div class="stat-card">
+          <span class="stat-number">0</span>
+          <span class="stat-label">Total Teams</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">0</span>
+          <span class="stat-label">Total Participants</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">0</span>
+          <span class="stat-label">Universities</span>
+        </div>
+      </div>
+
+      <div class="teams-list">
+        <p class="teams-placeholder">Registration opening soon! Be the first to register.</p>
+        <!-- Teams will be dynamically loaded here -->
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq section-padding">
+      <div class="section-header">
+        <h2 class="section-title">Frequently Asked <span class="highlight">Questions</span></h2>
+        <div class="title-bar"></div>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Who can participate in Circuit Clash 1.0?</h3>
+            <i class='bx bx-chevron-down'></i>
+          </div>
+          <div class="faq-answer">
+            <p>Any currently enrolled university student in Bangladesh can participate. Valid university ID is required for registration.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Can a team register for multiple segments?</h3>
+            <i class='bx bx-chevron-down'></i>
+          </div>
+          <div class="faq-answer">
+            <p>Yes! Teams can register for multiple segments. However, separate registration fees apply for each segment.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>What should we bring on the event day?</h3>
+            <i class='bx bx-chevron-down'></i>
+          </div>
+          <div class="faq-answer">
+            <p>Bring your university ID, registration confirmation, and any equipment needed for your segment (robots, laptops, etc.). Detailed guidelines will be emailed to registered teams.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Is accommodation provided?</h3>
+            <i class='bx bx-chevron-down'></i>
+          </div>
+          <div class="faq-answer">
+            <p>Limited accommodation may be available for teams from outside Dhaka. Please mention this in your registration form for consideration.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>What if we need to cancel our registration?</h3>
+            <i class='bx bx-chevron-down'></i>
+          </div>
+          <div class="faq-answer">
+            <p>Cancellations before November 1st will receive 50% refund. No refunds after November 1st. Contact us immediately if you need to cancel.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section section-padding" id="contact">
+      <div class="section-header">
+        <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+        <div class="title-bar"></div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <i class='bx bx-phone'></i>
+          <h3>Phone</h3>
+          <p>+880 1XXX-XXXXXX</p>
+          <p>+880 1XXX-XXXXXX</p>
+        </div>
+
+        <div class="contact-card">
+          <i class='bx bx-envelope'></i>
+          <h3>Email</h3>
+          <p>circuitclash@buprc.org</p>
+          <p>info@buprc.org</p>
+        </div>
+
+        <div class="contact-card">
+          <i class='bx bx-map'></i>
+          <h3>Venue</h3>
+          <p>Bangladesh University</p>
+          <p>of Professionals, Dhaka</p>
+        </div>
+
+        <div class="contact-card">
+          <i class='bx bxl-facebook-circle'></i>
+          <h3>Social Media</h3>
+          <div class="social-links-contact">
+            <a href="https://www.facebook.com/BUPRC" target="_blank"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/bup_rc/" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.linkedin.com/company/buprc/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span>CIRCUIT CLASH 1.0</span>
+        <p>Organized by BUP Robotics Club</p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#about-event">About Event</a></li>
+            <li><a href="#segments">Segments</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#register">Register</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Rulebooks</a></li>
+            <li><a href="#">Registered Teams</a></li>
+            <li><a href="#">Event Guidelines</a></li>
+            <li><a href="index.html">BUPRC Home</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2025 Circuit Clash 1.0 | BUP Robotics Club</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="circuit-clash.js"></script>
+</body>
+
+</html>
