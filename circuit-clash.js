@@ -104,6 +104,26 @@ faqItems.forEach(item => {
   });
 });
 
+// Initialize on load - make sure all components are properly initialized
+window.addEventListener('DOMContentLoaded', () => {
+  // Make sure first FAQ item is open by default
+  if (document.querySelector('.faq-item')) {
+    document.querySelector('.faq-item').classList.add('active');
+  }
+  
+  // Fix any structural issues via JS if needed
+  const segmentCards = document.querySelectorAll('.segment-card');
+  segmentCards.forEach(card => {
+    // Ensure proper structure
+    if (card.querySelector('.segment-details')) {
+      card.querySelector('.segment-details').style.display = 'block';
+    }
+  });
+  
+  // Initialize countdown
+  initCountdown();
+});
+
 // Particles.js Background
 if (document.getElementById('particles-js')) {
   particlesJS('particles-js', {
