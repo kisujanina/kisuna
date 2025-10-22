@@ -1,0 +1,126 @@
+/* Circuit Clash - Registration Section Styles */
+
+.registration-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+}
+
+.info-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+.info-list i {
+  color: #1ed760;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.info-list li strong {
+  color: var(--accent-color);
+}
+
+.payment-info {
+  background: rgba(30, 215, 96, 0.05);
+  border: 1px solid rgba(30, 215, 96, 0.2);
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.payment-info h4 {
+  color: #1ed760;
+  margin-bottom: 15px;
+}
+
+.note {
+  font-size: 0.85rem;
+  color: #888;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.note.highlight {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.registration-form-container {
+  background: rgba(30, 215, 96, 0.05);
+  border: 2px solid rgba(30, 215, 96, 0.2);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.form-description {
+  color: #888;
+  margin-bottom: 30px;
+}
+
+.segment-selection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.segment-btn {
+  background: rgba(30, 215, 96, 0.1);
+  border: 2px solid rgba(30, 215, 96, 0.3);
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1rem;
+}
+
+.segment-btn:hover, .segment-btn.active {
+  background: #1ed760;
+  color: #000;
+  border-color: #1ed760;
+}
+
+.registration-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.link-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #1ed760;
+  text-decoration: none;
+  padding: 15px;
+  background: rgba(30, 215, 96, 0.05);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.link-item:hover {
+  background: rgba(30, 215, 96, 0.1);
+  transform: translateX(5px);
+}
+
+.link-item i {
+  font-size: 1.5rem;
+}
+
+.registration-info, 
+.registration-form-container {
+  flex: 1 1 350px;
+}

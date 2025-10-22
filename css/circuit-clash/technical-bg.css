@@ -1,0 +1,68 @@
+/* Mechanical Background - Image-based with animation */
+
+/* Remove old technical background styles */
+#technical-background {
+  display: none;
+}
+
+/* New mechanical background styles */
+.mechanical-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url('../../image/Mechanical_bg.png');
+  background-size: cover;
+  background-position: center;
+  transition: background-position 0.05s ease-out;
+  animation: breathe 10s infinite alternate;
+}
+
+.mechanical-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, 
+    rgba(10, 15, 20, 0.7), 
+    rgba(10, 15, 20, 0.5),
+    rgba(0, 0, 0, 0.2));
+  z-index: 0;
+}
+
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+/* Content containers need semi-transparent backgrounds for readability */
+.segment-card, 
+.contact-card, 
+.faq-item, 
+.payment-info,
+.registration-form-container,
+.event-hero-content,
+.timeline-content {
+  background: rgba(10, 15, 20, 0.75); /* Semi-transparent dark background */
+  backdrop-filter: blur(3px);
+}
+
+/* Section titles with text shadow for legibility */
+.section-title {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+/* Enhance text readability */
+p, li, .card-description, .segment-description, 
+.timeline-content p, .faq-answer p {
+  color: #e8e8e8;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}

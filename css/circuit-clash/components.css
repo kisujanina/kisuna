@@ -1,0 +1,321 @@
+/* Circuit Clash - Reusable Components */
+
+/* FAQ Section */
+.faq-container {
+  max-width: 900px;
+  margin: 50px auto;
+}
+
+.faq-item {
+  background: rgba(10, 15, 20, 0.85); /* Darker, more opaque backgrounds */
+  border: 1px solid rgba(30, 215, 96, 0.3);
+  border-radius: 15px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  cursor: pointer;
+}
+
+.faq-question h3 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.faq-question i {
+  font-size: 1.5rem;
+  color: #1ed760;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question i {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 1.2rem;
+  display: none;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  display: block;
+  padding: 0 25px 25px;
+}
+
+.faq-answer p {
+  color: #e0e0e0; /* Lighter text color for better visibility */
+  line-height: 1.6;
+}
+
+/* Contact Cards */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.contact-card {
+  background: rgba(10, 15, 20, 0.85); /* Darker, more opaque backgrounds */
+  border: 1px solid rgba(30, 215, 96, 0.3);
+  border-radius: 15px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  border-color: #1ed760;
+  transform: translateY(-5px);
+}
+
+.contact-card i {
+  font-size: 3rem;
+  color: #1ed760;
+  margin-bottom: 20px;
+}
+
+.contact-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.contact-card p {
+  color: #888;
+  margin: 5px 0;
+}
+
+.social-links-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.social-links-contact a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(30, 215, 96, 0.1);
+  color: var(--text-color);
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.social-links-contact a:hover {
+  background: var(--accent-color);
+  color: var(--bg-color);
+  transform: translateY(-3px);
+}
+
+/* Title Bars */
+.title-bar {
+  position: relative;
+  height: 4px;
+  width: 70px;
+  margin: 0 auto;
+  margin-top: 15px;
+  background: rgba(30, 215, 96, 0.3);
+  border-radius: 2px;
+}
+
+.title-bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 40%;
+  background: var(--accent-color);
+  border-radius: 2px;
+  animation: titleBarPulse 2s infinite alternate;
+}
+
+@keyframes titleBarPulse {
+  0% {
+    width: 40%;
+    box-shadow: 0 0 10px rgba(30, 215, 96, 0.2);
+  }
+  100% {
+    width: 100%;
+    box-shadow: 0 0 20px rgba(30, 215, 96, 0.5);
+  }
+}
+
+/* Highlights */
+.highlight {
+  color: var(--accent-color);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.highlight::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+.highlight:hover::after {
+  width: 100%;
+}
+
+.section-title .highlight {
+  text-shadow: 0 0 15px rgba(30, 215, 96, 0.3);
+}
+
+span.highlight::after {
+  background-color: var(--accent-color);
+  box-shadow: 0 0 8px var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+/* Enhance card contrast for technical background */
+.segment-card, 
+.contact-card, 
+.faq-item, 
+.payment-info,
+.registration-form-container {
+  background: rgba(10, 15, 20, 0.75); /* Semi-transparent dark background */
+  border: 1px solid rgba(30, 215, 96, 0.5); /* Stronger border */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.segment-details {
+  background: rgba(5, 10, 15, 0.8); /* Darker background */
+}
+
+/* Make text more visible */
+.card-description,
+.segment-description,
+.event-description,
+.timeline-content p,
+.faq-answer p {
+  color: #e8e8e8;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Make important text stand out */
+h3, .segment-title, .card-title {
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Timeline content */
+.timeline-content {
+  background: rgba(10, 15, 20, 0.75);
+  border-color: rgba(30, 215, 96, 0.5);
+}
+
+/* Highlight green elements for better visibility */
+.highlight, .accent-text, .accent-color {
+  text-shadow: 0 0 10px rgba(30, 215, 96, 0.8);
+}
+
+/* Enhance section backgrounds */
+.section-padding {
+  position: relative;
+}
+
+.section-padding::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 15, 20, 0.7); /* Semi-transparent dark background */
+  z-index: -1;
+  border-radius: inherit;
+}
+
+/* Section titles with text shadow for legibility */
+.section-title {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+/* Enhanced event badge styling */
+.event-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #1ed760, #14a248);
+  color: #000;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(20, 162, 72, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+}
+
+.event-badge::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    rgba(255, 255, 255, 0), 
+    rgba(255, 255, 255, 0.4), 
+    rgba(255, 255, 255, 0));
+  transform: translateX(-100%);
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Green theme scrollbar styling */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(10, 15, 20, 0.8);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(30, 215, 96, 0.6);
+  border-radius: 10px;
+  border: 3px solid rgba(10, 15, 20, 0.8);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-color) rgba(10, 15, 20, 0.8);
+}

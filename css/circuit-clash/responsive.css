@@ -1,0 +1,70 @@
+/* Circuit Clash - Responsive Design */
+
+@media (max-width: 968px) {
+  .event-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .countdown-timer {
+    justify-content: center;
+  }
+  
+  .countdown-item {
+    min-width: 80px;
+    padding: 15px;
+  }
+  
+  .countdown-value {
+    font-size: 2rem;
+  }
+  
+  .timeline::before {
+    left: 20px;
+  }
+  
+  .timeline-marker {
+    left: 20px;
+  }
+  
+  .timeline-content {
+    width: calc(100% - 60px);
+    margin-left: 60px !important;
+  }
+  
+  .registration-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .segments-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .segment-selection {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .event-key-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .countdown-timer {
+    gap: 10px;
+  }
+  
+  .countdown-item {
+    min-width: 70px;
+    padding: 10px;
+  }
+  
+  .countdown-value {
+    font-size: 1.5rem;
+  }
+  
+  .countdown-label {
+    font-size: 0.75rem;
+  }
+}

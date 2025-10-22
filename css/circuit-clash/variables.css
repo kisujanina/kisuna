@@ -1,0 +1,10 @@
+/* Circuit Clash - Color Variables & Theme Configuration */
+
+:root {
+  --accent-color: #1ed760;
+  --accent-color-dark: #14a248;
+  --accent-color-light: #8befa5;
+  --accent-glow: rgba(30, 215, 96, 0.4);
+  --accent-transparent: rgba(30, 215, 96, 0.1);
+  --accent-dark-bg: #104020;
+}

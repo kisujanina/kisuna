@@ -1,0 +1,115 @@
+/* Circuit Clash - Header & Footer Styles */
+
+/* Header */
+.header {
+  background: rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid rgba(30, 215, 96, 0.1);
+}
+
+.header.scrolled {
+  background: rgba(0, 20, 10, 0.9);
+  box-shadow: 0 5px 20px rgba(30, 215, 96, 0.1);
+}
+
+.logo-text {
+  color: var(--accent-color);
+}
+
+.menu-btn__burger {
+  background: var(--text-color);
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  background: var(--text-color);
+}
+
+.menu-btn.open .menu-btn__burger {
+  background: transparent;
+}
+
+.menu-btn.open .menu-btn__burger::before,
+.menu-btn.open .menu-btn__burger::after {
+  background: var(--accent-color);
+}
+
+.nav-link::after {
+  background: var(--accent-color);
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: var(--accent-color);
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(to top, rgba(0, 20, 10, 0.95), rgba(0, 10, 5, 0.9));
+  border-top: 1px solid rgba(30, 215, 96, 0.1);
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(30, 215, 96, 0.8), 
+    var(--accent-color),
+    rgba(30, 215, 96, 0.8),
+    transparent);
+  box-shadow: 0 0 25px 5px rgba(30, 215, 96, 0.5);
+}
+
+.footer-logo span {
+  color: var(--accent-color);
+}
+
+.footer-column h3 {
+  color: var(--accent-color);
+  position: relative;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+
+.footer-column h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: var(--accent-color);
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(30, 215, 96, 0.5);
+  animation: footerBarPulse 2s infinite alternate;
+}
+
+@keyframes footerBarPulse {
+  0% {
+    width: 40px;
+    box-shadow: 0 0 5px rgba(30, 215, 96, 0.3);
+  }
+  100% {
+    width: 60px;
+    box-shadow: 0 0 15px rgba(30, 215, 96, 0.6);
+  }
+}
+
+.footer-column ul li a {
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.footer-column ul li a:hover {
+  color: var(--accent-color);
+  transform: translateX(5px);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(30, 215, 96, 0.1);
+}
