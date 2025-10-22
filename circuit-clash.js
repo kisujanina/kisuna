@@ -104,6 +104,33 @@ faqItems.forEach(item => {
   });
 });
 
+// Scrollspy for nav-link active state
+function updateActiveNavLink() {
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-link');
+  let currentSectionId = '';
+
+  const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 100;
+    const sectionHeight = section.offsetHeight;
+    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+      currentSectionId = section.getAttribute('id');
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (currentSectionId && link.getAttribute('href') === '#' + currentSectionId) {
+      link.classList.add('active');
+    }
+  });
+}
+
+window.addEventListener('scroll', updateActiveNavLink);
+window.addEventListener('DOMContentLoaded', updateActiveNavLink);
+
 // Initialize on load - make sure all components are properly initialized
 window.addEventListener('DOMContentLoaded', () => {
   // Make sure first FAQ item is open by default
