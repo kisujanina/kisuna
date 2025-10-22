@@ -65,3 +65,14 @@ body::before {
   backdrop-filter: blur(3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
+
+/* Menu button visibility */
+.menu-btn {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .menu-btn {
+    display: flex !important;
+  }
+}
