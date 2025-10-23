@@ -183,6 +183,34 @@
       backdrop-filter: blur(5px);
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
     }
+
+    /* Sponsors section styling */
+    .sponsors-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+
+    .sponsor-card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      border: 1px solid rgba(30, 215, 96, 0.3);
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .sponsor-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(30, 215, 96, 0.3);
+    }
+
+    .sponsor-card img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
   </style>
 </head>
 
@@ -208,6 +236,7 @@
           <li><a href="#segments" class="nav-link">Segments</a></li>
           <li><a href="#schedule" class="nav-link">Schedule</a></li>
           <li><a href="#register" class="nav-link active">Register</a></li>
+          <li><a href="#sponsors" class="nav-link">Sponsors</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
@@ -360,8 +389,10 @@
           </div>
           <h3 class="segment-title">Project Showcasing</h3>
           <p class="segment-description">
-            Present your innovative academic or personal projects in technology, robotics, or AI to industry experts and judges.<br>
-            <span style="color:#1ed760;font-weight:600;display:block;margin-top:10px;">📢 Round 1 (Preliminary) Registration is <u>OPEN NOW!</u></span>
+            Present your innovative academic or personal projects in technology, robotics, or AI to industry experts and
+            judges.<br>
+            <span style="color:#1ed760;font-weight:600;display:block;margin-top:10px;">📢 Round 1 (Preliminary)
+              Registration is <u>OPEN NOW!</u></span>
           </p>
           <div class="segment-details">
             <div class="detail-item">
@@ -385,14 +416,18 @@
               <span>Preliminary Fee: 400 BDT</span>
             </div>
           </div>
-          <div class="segment-info" style="margin-top:15px;padding:15px;background:rgba(30,215,96,0.1);border-radius:10px;">
-            <p style="font-size:0.9rem;margin:5px 0;"><strong>Round 1:</strong> Submit project overview & video online</p>
+          <div class="segment-info"
+            style="margin-top:15px;padding:15px;background:rgba(30,215,96,0.1);border-radius:10px;">
+            <p style="font-size:0.9rem;margin:5px 0;"><strong>Round 1:</strong> Submit project overview & video online
+            </p>
             <p style="font-size:0.9rem;margin:5px 0;"><strong>Round 2:</strong> Top 20 teams present live at BUP</p>
-            <p style="font-size:0.9rem;margin:5px 0;color:#1ed760;"><strong>Open to:</strong> All university students in Bangladesh</p>
+            <p style="font-size:0.9rem;margin:5px 0;color:#1ed760;"><strong>Open to:</strong> All university students in
+              Bangladesh</p>
           </div>
           <div class="segment-actions">
             <a href="https://tinyurl.com/buprcprojectshow" target="_blank" class="btn btn-small">View Rulebook</a>
-            <a href="https://forms.gle/tGLdUU8qyZswWrB58" target="_blank" class="btn btn-small btn-primary">Register Now</a>
+            <a href="https://forms.gle/tGLdUU8qyZswWrB58" target="_blank" class="btn btn-small btn-primary">Register
+              Now</a>
           </div>
         </div>
         <!-- Robo Soccer -->
@@ -524,7 +559,8 @@
           <div class="timeline-content">
             <h3>CipherSprint & Project Showcasing Registration Closes</h3>
             <p class="timeline-date">November 5, 2025</p>
-            <p>Last day to register for CipherSprint CTF preliminary round and submit Project Showcasing Round 1 (project overview & video). Project Showcasing teams must pay 400 BDT registration fee.</p>
+            <p>Last day to register for CipherSprint CTF preliminary round and submit Project Showcasing Round 1
+              (project overview & video). Project Showcasing teams must pay 400 BDT registration fee.</p>
           </div>
         </div>
 
@@ -560,7 +596,8 @@
           <div class="timeline-content">
             <h3>Competition Day 1</h3>
             <p class="timeline-date">November 15, 2025 - 10:00 AM - 6:00 PM</p>
-            <p>Robo Soccer, LFR preliminary rounds, and Project Showcasing Round 2 Finals (Top 20 teams present live at BUP)</p>
+            <p>Robo Soccer, LFR preliminary rounds, and Project Showcasing Round 2 Finals (Top 20 teams present live at
+              BUP)</p>
           </div>
         </div>
 
@@ -597,7 +634,8 @@
           <ul class="info-list">
             <li><i class='bx bx-check-circle'></i> <strong>CipherSprint CTF:</strong> FREE Registration! (Oct 20 - Nov
               5)</li>
-            <li><i class='bx bx-check-circle'></i> <strong>Project Showcasing Round 1:</strong> 400 BDT per team (Deadline: Nov 5, 2025)</li>
+            <li><i class='bx bx-check-circle'></i> <strong>Project Showcasing Round 1:</strong> 400 BDT per team
+              (Deadline: Nov 5, 2025)</li>
             <li><i class='bx bx-check-circle'></i> Teams can register for multiple segments</li>
             <li><i class='bx bx-check-circle'></i> University ID required for verification</li>
             <li><i class='bx bx-check-circle'></i> Certificates for all participants</li>
@@ -627,8 +665,10 @@
             <button class="segment-btn" data-segment="fc">FC Tournament</button>
           </div>
 
-          <a href="https://forms.gle/M37NHefZTcaxXJoh6" target="_blank" class="btn btn-primary btn-large" style="margin-bottom:15px;">Register for CipherSprint (FREE)</a>
-          <a href="https://forms.gle/tGLdUU8qyZswWrB58" target="_blank" class="btn btn-primary btn-large">Register for Project Showcasing (400 BDT)</a>
+          <a href="https://forms.gle/M37NHefZTcaxXJoh6" target="_blank" class="btn btn-primary btn-large"
+            style="margin-bottom:15px;">Register for CipherSprint (FREE)</a>
+          <a href="https://forms.gle/tGLdUU8qyZswWrB58" target="_blank" class="btn btn-primary btn-large">Register for
+            Project Showcasing (400 BDT)</a>
 
           <div class="registration-links">
             <a href="https://tinyurl.com/buprcciphersprint" target="_blank" class="link-item">
@@ -688,6 +728,39 @@
         <p class="teams-placeholder">Registration opening soon! Be the first to register.</p>
       </div>
     </section> -->
+
+    <!-- Sponsors Section -->
+    <section class="sponsors section-padding" id="sponsors">
+      <div class="section-header">
+        <h2 class="section-title">Our <span class="highlight">Sponsors</span></h2>
+        <div class="title-bar"></div>
+      </div>
+
+      <div class="sponsors-grid">
+        <div class="sponsor-card">
+          <a href="https://knightsquad.org" target="_blank" rel="noopener noreferrer">
+            <img src="image/sponsors/knight-squad-logo.png" alt="Sponsor 4">
+          </a>
+        </div>
+        <div class="sponsor-card">
+          <a href="https://gotmyhost.com/" target="_blank" rel="noopener noreferrer">
+            <img src="image/sponsors/gotmyhost.png" alt="Sponsor 1">
+          </a>
+        </div>
+        <div class="sponsor-card">
+          <a href="https://hackviser.com/" target="_blank" rel="noopener noreferrer">
+            <img src="image/sponsors/hackviser_icon.webp" alt="Sponsor 2">
+          </a>
+        </div>
+        <div class="sponsor-card">
+          <a href="https://tweethost.com/" target="_blank" rel="noopener noreferrer">
+            <img src="image/sponsors/Hosting_partner (Tweet Host).png" alt="Sponsor 3">
+          </a>
+        </div>
+
+        <!-- Add more sponsor cards as needed -->
+      </div>
+    </section>
 
     <!-- FAQ Section -->
     <section class="faq section-padding">
@@ -822,6 +895,7 @@
           <ul>
             <!-- <li><a href="#">Rulebooks</a></li>
             <li><a href="#">Registered Teams</a></li>
+
             <li><a href="#">Event Guidelines</a></li> -->
             <li><a href="index.html">BUPRC Home</a></li>
           </ul>
