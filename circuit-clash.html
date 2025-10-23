@@ -183,34 +183,6 @@
       backdrop-filter: blur(5px);
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
     }
-
-    /* Sponsors section styling */
-    .sponsors-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-      gap: 1rem;
-    }
-
-    .sponsor-card {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 1rem;
-      border: 1px solid rgba(30, 215, 96, 0.3);
-      border-radius: 10px;
-      transition: transform 0.3s;
-    }
-
-    .sponsor-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 5px 15px rgba(30, 215, 96, 0.3);
-    }
-
-    .sponsor-card img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
   </style>
 </head>
 
@@ -739,23 +711,27 @@
       <div class="sponsors-grid">
         <div class="sponsor-card">
           <a href="https://knightsquad.org" target="_blank" rel="noopener noreferrer">
-            <img src="image/sponsors/knight-squad-logo.png" alt="Sponsor 4">
+            <img src="image/sponsors/knight-squad-logo.png" alt="Knight Squad">
           </a>
+          <div class="sponsor-name">Knight Squad</div>
         </div>
         <div class="sponsor-card">
           <a href="https://gotmyhost.com/" target="_blank" rel="noopener noreferrer">
-            <img src="image/sponsors/gotmyhost.png" alt="Sponsor 1">
+            <img src="image/sponsors/gmh.png" alt="GotMyHost">
           </a>
+          <div class="sponsor-name">GotMyHost</div>
         </div>
         <div class="sponsor-card">
           <a href="https://hackviser.com/" target="_blank" rel="noopener noreferrer">
-            <img src="image/sponsors/hackviser_icon.webp" alt="Sponsor 2">
+            <img src="image/sponsors/hackviser_icon.webp" alt="Hackviser">
           </a>
+          <div class="sponsor-name">Hackviser</div>
         </div>
         <div class="sponsor-card">
           <a href="https://tweethost.com/" target="_blank" rel="noopener noreferrer">
-            <img src="image/sponsors/Hosting_partner (Tweet Host).png" alt="Sponsor 3">
+            <img src="image/sponsors/Hosting_partner (Tweet Host).png" alt="Tweet Host">
           </a>
+          <div class="sponsor-name">Tweet Host</div>
         </div>
 
         <!-- Add more sponsor cards as needed -->
