@@ -74,27 +74,27 @@ const dynamicRegisterBtn = document.getElementById('dynamic-register-btn');
 // Segment registration links and button text
 const segmentRegisterLinks = {
   'robo-soccer': {
-    url: 'https://tickify.live/event/circuit-clash-10/',
+    url: 'https://link.buprc.tech/general-segment-registration',
     text: 'Register for Robo Soccer'
   },
   'lfr': {
-    url: 'https://tickify.live/event/circuit-clash-10/',
+    url: 'https://link.buprc.tech/general-segment-registration',
     text: 'Register for LFR'
   },
   'ctf': {
-    url: 'https://forms.gle/M37NHefZTcaxXJoh6',
+    url: 'https://link.buprc.tech/ciphersprint-registration',
     text: 'Register for CipherSprint'
   },
   'project': {
-    url: 'https://forms.gle/tGLdUU8qyZswWrB58',
+    url: 'https://link.buprc.tech/project-showcasing-registration',
     text: 'Register for Project Showcasing'
   },
   'valorant': {
-    url: 'https://tickify.live/event/circuit-clash-10/',
+    url: 'https://link.buprc.tech/general-segment-registration',
     text: 'Register for Valorant'
   },
   'fc': {
-    url: 'https://tickify.live/event/circuit-clash-10/',
+    url: 'https://link.buprc.tech/general-segment-registration',
     text: 'Register for FC Tournament'
   }
 };
