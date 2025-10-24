@@ -67,10 +67,53 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Segment Selection
 const segmentBtns = document.querySelectorAll('.segment-btn');
+const dynamicRegisterBtn = document.getElementById('dynamic-register-btn');
+
+// Segment registration links and button text
+const segmentRegisterLinks = {
+  'robo-soccer': {
+    url: 'https://tickify.live/event/circuit-clash-10/',
+    text: 'Register for Robo Soccer'
+  },
+  'lfr': {
+    url: 'https://tickify.live/event/circuit-clash-10/',
+    text: 'Register for LFR'
+  },
+  'ctf': {
+    url: 'https://forms.gle/M37NHefZTcaxXJoh6',
+    text: 'Register for CipherSprint'
+  },
+  'project': {
+    url: 'https://forms.gle/tGLdUU8qyZswWrB58',
+    text: 'Register for Project Showcasing'
+  },
+  'valorant': {
+    url: 'https://tickify.live/event/circuit-clash-10/',
+    text: 'Register for Valorant'
+  },
+  'fc': {
+    url: 'https://tickify.live/event/circuit-clash-10/',
+    text: 'Register for FC Tournament'
+  }
+};
+
+function updateRegisterBtn(segment) {
+  if (dynamicRegisterBtn && segmentRegisterLinks[segment]) {
+    dynamicRegisterBtn.href = segmentRegisterLinks[segment].url;
+    dynamicRegisterBtn.textContent = segmentRegisterLinks[segment].text;
+    dynamicRegisterBtn.style.display = 'inline-block';
+  }
+}
+
+// Set default segment (optional)
+updateRegisterBtn('robo-soccer');
+
 segmentBtns.forEach(btn => {
   btn.addEventListener('click', () => {
     segmentBtns.forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
+    const segment = btn.getAttribute('data-segment');
+    updateRegisterBtn(segment);
   });
 });
 

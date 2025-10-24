@@ -629,21 +629,15 @@
           <p class="form-description">Choose your segment and complete the registration</p>
 
           <div class="segment-selection">
-            <button class="segment-btn" data-segment="robo-soccer">Robo Soccer</button>
+            <button class="segment-btn active" data-segment="robo-soccer">Robo Soccer</button>
             <button class="segment-btn" data-segment="lfr">LFR</button>
-            <button class="segment-btn" data-segment="ctf">CipherSprint CTF (FREE)</button>
+            <button class="segment-btn" data-segment="ctf">CipherSprint CTF</button>
             <button class="segment-btn" data-segment="project">Project Showcasing</button>
             <button class="segment-btn" data-segment="valorant">Valorant</button>
             <button class="segment-btn" data-segment="fc">FC Tournament</button>
           </div>
-          <a href="https://tickify.live/event/circuit-clash-10/" target="_blank"
-            class="btn btn-primary btn-large">Register for
-            Robo Soccer, LFR, FC and Valorant</a>
-            <a href="https://forms.gle/tGLdUU8qyZswWrB58" target="_blank" class="btn btn-primary btn-large">Register for
-            Project Showcasing (400 BDT)</a>
-          <a href="https://forms.gle/M37NHefZTcaxXJoh6" target="_blank" class="btn btn-primary btn-large"
-            style="margin-bottom:15px;">Register for CipherSprint (FREE)</a>
-          
+          <a id="dynamic-register-btn" href="#" target="_blank" class="btn btn-primary btn-large" style="margin-bottom:15px;">Register</a>
+          <!-- Keep the other static registration links for Project Showcasing and CipherSprint if needed -->
 
           <div class="registration-links">
             <a href="https://tinyurl.com/buprcciphersprint" target="_blank" class="link-item">
@@ -707,7 +701,7 @@
     <!-- Sponsors Section -->
     <section class="sponsors section-padding" id="sponsors">
       <div class="section-header">
-        <h2 class="section-title">Our <span class="highlight">Sponsors</span></h2>
+        <h2 class="section-title">Our <span class="highlight">Sponsors and Partners</span></h2>
         <div class="title-bar"></div>
       </div>
 
@@ -717,6 +711,12 @@
             <img src="image/sponsors/knight-squad-logo.png" alt="Knight Squad">
           </a>
           <div class="sponsor-name">Knight Squad</div>
+        </div>
+        <div class="sponsor-card">
+          <a href="https://tickify.live/" target="_blank" rel="noopener noreferrer">
+            <img src="image/sponsors/tickify-email-logo.png" alt="Tickify">
+          </a>
+          <div class="sponsor-name">Tickify</div>
         </div>
         <div class="sponsor-card">
           <a href="https://gotmyhost.com/" target="_blank" rel="noopener noreferrer">
@@ -831,9 +831,7 @@
         <div class="contact-card">
           <i class='bx bx-envelope'></i>
           <h3>Email</h3>
-          <p>rasheduzzamanimran@gmail.com</p>
-          <p>faikazmain07@gmail.com</p>
-          <p>mohsinsrj03@gmail.com</p>
+          <p>buproboticsclub@gmail.com</p>
         </div>
 
         <div class="contact-card">
