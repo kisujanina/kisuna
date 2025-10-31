@@ -3,17 +3,22 @@
 .event-hero {
   min-height: 100vh;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  padding: 100px 5% 50px;
+  justify-content: space-evenly;
+  padding: 120px 5% 50px;
   position: relative;
   overflow: hidden;
+  gap: 40px;
 }
 
 /* Improve hero section visibility */
 
 /* Remove the full overlay and use localized contrast */
 .event-hero-content {
+  flex: 1 1 500px;
+  min-width: 300px;
+  max-width: 1000px;
   position: relative;
   z-index: 2;
   padding: 2rem;
@@ -58,17 +63,22 @@
 }
 
 .event-hero-image {
-  flex: 1;
+  flex: 1 1 450px;
+  min-width: 300px;
+  max-width: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 /* Enhance image contrast */
 .floating-logo {
   filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.4));
-  max-width: 500px;
   width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
   animation: float 3s ease-in-out infinite;
 }
 
@@ -147,4 +157,101 @@
 .highlight-card p {
   color: #888;
   font-size: 0.95rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .event-hero {
+    padding: 100px 3% 40px;
+  }
+  
+  .event-hero-content {
+    max-width: 600px;
+  }
+  
+  .event-hero-image {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 991px) {
+  .event-hero {
+    flex-direction: column;
+    padding: 100px 5% 40px;
+    text-align: center;
+  }
+  
+  .event-hero-content,
+  .event-hero-image {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  
+  .event-key-info {
+    justify-content: center;
+  }
+  
+  .cta-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .event-hero {
+    padding: 80px 4% 30px;
+  }
+  
+  .event-title {
+    font-size: 2rem;
+  }
+  
+  .event-tagline {
+    font-size: 1.2rem;
+  }
+  
+  .countdown-timer {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .countdown-item {
+    min-width: 80px;
+    padding: 15px;
+  }
+  
+  .countdown-value {
+    font-size: 2rem;
+  }
+  
+  .floating-logo {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-hero-content {
+    padding: 1.5rem;
+  }
+  
+  .event-title {
+    font-size: 1.8rem;
+  }
+  
+  .info-item {
+    font-size: 0.95rem;
+  }
+  
+  .countdown-item {
+    min-width: 70px;
+    padding: 12px;
+  }
+  
+  .countdown-value {
+    font-size: 1.8rem;
+  }
+  
+  .floating-logo {
+    max-width: 280px;
+  }
 }
