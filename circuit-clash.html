@@ -183,6 +183,37 @@
       backdrop-filter: blur(5px);
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
     }
+
+    @keyframes pulse {
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.05);
+      }
+    }
+
+    /* Simple registration deadline notice */
+    .deadline-note {
+      text-align: center;
+      padding: 8px 5%;
+      font: 600 1rem 'Rajdhani', sans-serif;
+      color: #e9fff2;
+      background: rgba(10, 15, 20, 0.6);
+      border-top: 1px solid rgba(30, 215, 96, 0.2);
+      border-bottom: 1px solid rgba(30, 215, 96, 0.2);
+    }
+
+    .deadline-note a {
+      color: #1ed760;
+      text-decoration: underline;
+    }
+
+    .deadline-note a:hover {
+      color: #14a248;
+    }
   </style>
 </head>
 
@@ -209,13 +240,19 @@
           <li><a href="#schedule" class="nav-link">Schedule</a></li>
           <li><a href="#register" class="nav-link">Register</a></li>
           <li><a href="#sponsors" class="nav-link">Sponsors</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
     </div>
+    <div class="deadline-note">
+      Registration ends on November 5, 2025. <a href="#register">Register now</a>.
+    </div>
   </header>
 
   <main>
+    
+
     <!-- Event Hero Section -->
     <section class="event-hero" id="event-home">
       <div class="event-hero-content">
@@ -903,7 +940,7 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq section-padding">
+    <section class="faq section-padding" id="faq">
       <div class="section-header">
         <h2 class="section-title">Frequently Asked <span class="highlight">Questions</span></h2>
         <div class="title-bar"></div>

@@ -232,6 +232,7 @@
 @media (max-width: 480px) {
   .event-hero-content {
     padding: 1.5rem;
+    margin-top: 50px;
   }
   
   .event-title {
