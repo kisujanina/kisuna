@@ -214,6 +214,30 @@
     .deadline-note a:hover {
       color: #14a248;
     }
+
+    /* New banner styles */
+    .event-banner {
+      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto 2rem;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    }
+
+    .event-banner img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    @media (max-width: 600px) {
+      .event-banner {
+        margin-bottom: 1.5rem;
+        border-radius: 8px;
+      }
+    }
   </style>
 </head>
 
@@ -252,6 +276,9 @@
 
     <!-- Event Hero Section -->
     <section class="event-hero" id="event-home">
+      <div class="event-banner">
+        <img src="image/Latest_banner.png" alt="Circuit Clash 1.0 Banner">
+      </div>
       <div class="event-hero-content">
         <div class="event-badge">National Competition</div>
         <h1 class="event-title glitch-text" data-text="CIRCUIT CLASH 1.0">CIRCUIT CLASH 1.0</h1>
@@ -268,7 +295,7 @@
           </div>
           <div class="info-item">
             <i class='bx bx-trophy'></i>
-            <span>Over 175K BDT Prize Pool</span>
+            <span>Over 160K BDT Prize Pool</span>
           </div>
         </div>
 
@@ -295,10 +322,6 @@
             <span class="countdown-label">Seconds</span>
           </div>
         </div>
-      </div>
-
-      <div class="event-hero-image">
-        <img src="image/Event_logo.png" alt="Circuit Clash 1.0 Logo" class="floating-logo">
       </div>
     </section>
 
